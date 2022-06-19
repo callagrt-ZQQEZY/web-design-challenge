@@ -18,7 +18,7 @@
 
     <nav class="media-query-navbar-color navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class=" navbar-brand-color " href="Index.html">Latitude</a>
+          <a class=" navbar-brand-color " href="index.html">Latitude</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,35 +48,46 @@
         </div>
       </nav>
 
-      <br>
+      
+  <br>
+  <!--Create contiainer for single container for all site contents-->
+  <div class="container">
+      <!--Content class to contain first level of text before visualizations, pending how to expand to 2 vizualizations in large screen -->
+    <div class="content">
+      <h2 class="visualization-font-color text-left"> Comparison: Latitude vs X</h2>
+      <hr>
+      <p class="text-left">Click any plot to get an in-depth analysis</p>
+    </div>
+    <div class="container-fluid">
+      <!--Create a single row with 2 columns md-6 in order to distribute images into grid of 4 images. Note: creating 2 separate rows with 2 classes of col-md-6 would create 2 rows with 4 images stacked in the first half of the row-->
+      <section class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="images">
+            <figcaption class="visualization-font-color">vs. Max Temperature</figcaption>
+            <a href="maxtemp.html"><img class="img-fluid" src="assets/Max Temp.png" width="400px"
+                height="200px" alt="Latitude vs Max Temp"></a>
+            <figcaption class="visualization-font-color"> vs. Humidity</figcaption>
+            <a href="humidity.html"><img class="img-fluid" src="assets/Humidity.png" width="400px"
+                height="200px" alt="Latitude vs Humidity"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          
+          <div class="images">
+            <figcaption class="visualization-font-color">vs. Cloudiness</figcaption>
+            <a href="cloudiness.html"><img class="img-fluid" src="assets/Cloudiness.png" width="400px"
+                height="200px" alt="Latitude vs Cloudiness"></a>
+            <figcaption class="visualization-font-color"> vs. WindSpeed</figcaption>
+            <a href="windspeed.html"><img class="img-fluid" src="assets/Wind Speed.png" width="400px"
+                height="200px" alt="Latitude vs Windspeed"></a>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </div>
+  
 
-      <div class = "container">
-          <section class = "row">
-            <div class= "col-md-8">
-                <h2 class="visualization-font-color text-left"> Summary: Latitude vs X </h2>
-                <hr class="my-4">
-                <img src="assets/Max Temp.png" alt="Latitude vs Temperature" style="float:left;width:300px;height:250px;padding-right:10px;display:block;">
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs, latitude. Factor we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-            </div>
-            <div class= "col-md-4">
-                <h2 class="visualization-font-color text-right">Visualizations </h2>
-                <hr class="my-4">
-                <div class = "visual-container">
-                    <div class="images justify-content-evenly">
-                      <a href="maxtemp.html"><img src="assets/Max Temp.png"  width="200px" height="200px" alt="latitude vs Max Temp"></a>
-                      <a href="cloudiness.html"><img src="assets/Cloudiness.png" width="200px" height="200px" alt="latitude vs Cloudiness"></a>
-                      <a href="windspeed.html"><img src="assets/Wind Speed.png" width="200px" height="200px" alt="latitude vs Wind Speed"></a>
-                      <a href="humidity.html"><img src="assets/Humidity.png" width ="200px" height="200px"alt="latitude vs Humidity"></a>
-                   </div>
-              </div>
-
-            </div>
-              
-
-          </section>
-
-      </div>
+  </div>
 
   
 
