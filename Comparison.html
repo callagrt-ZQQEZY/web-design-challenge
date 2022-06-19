@@ -48,34 +48,46 @@
         </div>
       </nav>
 
-      <br>
       
-      <div class = "container">
-          <section class = "row">
-            <div class= "col-md-8 col-sm-12">
-                <h2 class="visualization-font-color text-left"> Humidity </h2>
-                <hr class="my-4">
-                <img src="assets/Humidity.png" class ="img-fluid" alt="Latitude vs Humidity">
-                <p> The wide scattering of values in this plot suggests there is little correlation between latitude and humidity.</p>
-            </div>
-            <div class= "col-md-4 col-sm-12">
-                <h2 class="visualization-font-color text-right">Visualizations </h2>
-                <hr class="my-4">
-                <div">
-                    <div>
-                      <a href="maxtemp.html"><img src="assets/Max Temp.png" width="200px" height="200px" alt="Latitude vs Max Temp"></a>
-                      <a href="cloudiness.html"><img src="assets/Cloudiness.png" width="200px" height="200px" alt="Latitude vs Cloudiness"></a>
-                      <a href="windspeed.html"><img src="assets/Wind Speed.png"  width="200px" height="200px" alt="Latitude vs Wind Speed"></a>
-                      <a href="humidity.html"><img class="border border-info border-2" src="assets/Humidity.png" width ="200px" height="200px"alt="Latitude vs Humidity"></a>
-                   </div>
-              </div>
+  <br>
+  <!--Create contiainer for single container for all site contents-->
+  <div class="container">
+      <!--Content class to contain first level of text before visualizations, pending how to expand to 2 vizualizations in large screen -->
+    <div class="content">
+      <h2 class="visualization-font-color text-left"> Comparison: Latitude vs X</h2>
+      <hr>
+      <p class="text-left">Click any plot to get an in-depth analysis</p>
+    </div>
+    <div class="container-fluid">
+      <!--Create a single row with 2 columns md-6 in order to distribute images into grid of 4 images. Note: creating 2 separate rows with 2 classes of col-md-6 would create 2 rows with 4 images stacked in the first half of the row-->
+      <section class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="images">
+            <figcaption class="visualization-font-color">vs. Max Temperature</figcaption>
+            <a href="maxtemp.html"><img class="img-fluid" src="assets/Max Temp.png" width="400px"
+                height="200px" alt="Latitude vs Max Temp"></a>
+            <figcaption class="visualization-font-color"> vs. Humidity</figcaption>
+            <a href="humidity.html"><img class="img-fluid" src="assets/Humidity.png" width="400px"
+                height="200px" alt="Latitude vs Humidity"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          
+          <div class="images">
+            <figcaption class="visualization-font-color">vs. Cloudiness</figcaption>
+            <a href="cloudiness.html"><img class="img-fluid" src="assets/Cloudiness.png" width="400px"
+                height="200px" alt="Latitude vs Cloudiness"></a>
+            <figcaption class="visualization-font-color"> vs. WindSpeed</figcaption>
+            <a href="windspeed.html"><img class="img-fluid" src="assets/Wind Speed.png" width="400px"
+                height="200px" alt="Latitude vs Windspeed"></a>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </div>
+  
 
-            </div>
-              
-
-          </section>
-
-      </div>
+  </div>
 
   
 
